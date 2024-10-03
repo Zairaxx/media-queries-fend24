@@ -1,0 +1,72 @@
+html {
+    height:100%;
+}
+
+body {
+    background:linear-gradient(black,red);
+    height:100%;
+    margin:0;
+}
+
+.site-wrapper {
+    height:100%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color:blue;
+    font-family:Raleway, Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom:60px;
+
+}
+
+
+.container {
+    width:250px;
+    background:darkgreen;;
+    display:flex;
+    height:600px;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    height:auto;
+}
+
+.child {
+    height:75px;
+    width:75px;
+    margin:5px;
+    background:pink;
+}
+/* Alternativ 1 */
+/* @media (min-width:700px) {} */
+
+
+/* Alternativ 2 - Nyare sätt att skriva media queries */
+
+@media (width >= 700px) {
+    h1 {
+        color:blue;
+    }
+
+    .container {
+        height:300px;
+        flex-direction: row;
+        flex-wrap:wrap;
+        width:100%;
+    }
+}
+
+/* Alternativt 1 */
+/* @media (max-width:400px) and (min-width:700px){}; */
+
+/* Alternativ 2 - Nyare sätt att skriva media queries */
+@media (400px < width < 700px) {
+    h1 {
+        color:greenyellow;
+        background:black;
+    }
+}
